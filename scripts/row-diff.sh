@@ -2,12 +2,14 @@
 
 set -euf -o pipefail
 
-# Script to visualize two file differences more clearly
+# Script to visualize differences in two file more clearly
 # 
 # Takes side-by-side diff output and runs it through AWK script.
 # Rows which contain differences or are new or deleted are printed out.
 # If a modified row can be split by tabs, each "column" is examined separately.
 # Differences are highlited with colors in terminal
+
+# Licensed under MIT License (see LICENSE.md at root)
 
 # Usage info
 show_help() {
